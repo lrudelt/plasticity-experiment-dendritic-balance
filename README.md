@@ -24,7 +24,6 @@ The time traces of the elicited post-synaptic potentials (PSPs) are modeled as a
 <img src="https://render.githubusercontent.com/render/math?math=z^{\text{BAP}}(t) = z^{\text{BAP}}_{\text{max}} \exp(-(t-t^{\text{BAP}})/\tau^{\text{BAP}}).">
 
 To match the biophysical properties of EPSP, IPSP and BAP, we note that both the maximum value of the time trace (e.g. <img src="https://render.githubusercontent.com/render/math?math=x^{\text{EPSP}}_{\text{max}}">), as well as the synaptic weight in the model (e.g. <img src="https://render.githubusercontent.com/render/math?math=F">) can be adapted. Here, we chose to set the synaptic weight values to one, i.e. <img src="https://render.githubusercontent.com/render/math?math=D=F=1">, and <img src="https://render.githubusercontent.com/render/math?math=W = -1 ">. The maximum EPSP and IPSP values were then chosen to agree with the experimentally measured values relatively to each other (Supplementary Fig 1 in [1]): <img src="https://render.githubusercontent.com/render/math?math=x^{\text{EPSP}}_{\text{max}} \approx 70 ">, <img src="https://render.githubusercontent.com/render/math?math=z^{\text{IPSP}}_{\text{max}} \approx 45.">
-
 Moreover, we chose the following values for the timescales of the PSPs: <img src="https://render.githubusercontent.com/render/math?math=\tau^{\text{EPSP}} = 10 \,\text{ms}">, <img src="https://render.githubusercontent.com/render/math?math=\tau^{\text{BAP}} = 5 \,\text{ms}.">
   
 The relative timing of the BAP and EPSPs in the simulation was chosen similar to the experiment with <img src="https://render.githubusercontent.com/render/math?math=t^{\text{BAP}} = 10\,\text{ms}">, and <img src="https://render.githubusercontent.com/render/math?math=t^{\text{EPSP}} = 10\,\text{ms}"> for the LTP protocol and  <img src="https://render.githubusercontent.com/render/math?math=t^{\text{EPSP}} = 25\,\text{ms}"> for the LTD protocol. For the GABA induced IPSPs, we assumed that the temporal overlap <img src="https://render.githubusercontent.com/render/math?math=\int_0^T dt\, z^{\text{BAP}}(t)z^{\text{IPSP}}(t)"> with the BAP is the same as for the EPSP in the LTP protocol.
@@ -33,9 +32,9 @@ Moreover, to match the experimental results for LTP and LTD protocol, we set the
 
 ### Experimentally measured induced spine volume changes
 The experimentally measured changes in spine volume $V_H$ from [1] are
-LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 63 \pm 21 \%">
-LTD: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 2.9 \pm 3.7 \%">
-LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx - 38.0 \pm 5.2 \%">
+LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 63 \pm 21 %">
+LTD: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 2.9 \pm 3.7 %">
+LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx - 38.0 \pm 5.2 %">
 
 [1] T. Hayama et al., “GABA promotes the competitive selection of dendritic spines by controlling local Ca2+ signaling,” Nat Neurosci, vol. 16, no. 10, pp. 1409–1416, Oct. 2013, doi: 10.1038/nn.3496.
 
