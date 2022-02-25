@@ -17,8 +17,8 @@ T = 1000. # in one second = 1000ms, one spike is observed, stimulation frequency
 tau_BAP = 5. # ms
 tau_EPSP = 10. # ms
 
-EPSP = 70. # pA
-IPSP = -45. # pA
+EPSP = 70. 
+IPSP = -45. 
 
 t_BAP = 10.0 # ms
 t_EPSP_LTP = 10.0 # ms, coincides with BAP
@@ -33,8 +33,8 @@ dF_ratio_LTP_experiment_err = 21.0
 dF_ratio_LTD_GABA_experiment_err = 5.2
 
 # Tuneable parameters
-eta_D = 0.000034 # learning rate in pA/ms
-BAP_max = 1.0 # pA
+eta_D = 0.000034 # learning rate in 1/ms
+BAP_max = 1.0 
 
 D0 = 1. # initial value of the decoding weight
 
