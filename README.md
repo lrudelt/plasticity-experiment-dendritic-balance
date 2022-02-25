@@ -11,12 +11,16 @@ Here, the local membrane voltage <img src="https://render.githubusercontent.com/
 
 <img src="https://render.githubusercontent.com/render/math?math=F x^{\text{EPSP}}(t) + W z^{\text{IPSP}}(t) - D F z^{\text{BAP}}(t))">
 
-of the synaptic input EPSP (<img src="https://render.githubusercontent.com/render/math?math=F x^{\text{EPSP}}"/>), inhibitory input IPSP (<img src="https://render.githubusercontent.com/render/math?math=W z^{\text{IPSP}}">) and a backpropagating action potential (BAP) (<img src="https://render.githubusercontent.com/render/math?math=DFz^{\text{BAP}}">). To compute the change in decoder weight induced by the plasticity protocol, we integrated the learning rule for $\frac{dD}{dt}$ over 80 seconds with a stimulation rate of 1 Hz (see below for details).
-Since the synaptic weight follows the decoding weight on slower timescales, after hours of plastic changes, the synaptic weight is $F=D$. Due to the choice of initial parameters ($F_0 = D_0 = 1$), the observed relative change in synaptic weight after the experiment will be $\Delta F/F_0 = \Delta D/D_0 = D-1$, which is plotted in panel C.
+of the synaptic input EPSP (<img src="https://render.githubusercontent.com/render/math?math=F x^{\text{EPSP}}"/>), inhibitory input IPSP (<img src="https://render.githubusercontent.com/render/math?math=W z^{\text{IPSP}}">) and a backpropagating action potential (BAP) (<img src="https://render.githubusercontent.com/render/math?math=DFz^{\text{BAP}}">). To compute the change in decoder weight induced by the plasticity protocol, we integrated the learning rule for <img src="https://render.githubusercontent.com/render/math?math=\frac{dD}{dt}"> over 80 seconds with a stimulation rate of 1 Hz (see below for details).
+Since the synaptic weight follows the decoding weight on slower timescales, after hours of plastic changes, the synaptic weight is <img src="https://render.githubusercontent.com/render/math?math=F=D">. Due to the choice of initial parameters (<img src="https://render.githubusercontent.com/render/math?math=F_0 = D_0 = 1">), the observed relative change in synaptic weight after the experiment will be <img src="https://render.githubusercontent.com/render/math?math=\Delta F/F_0 = \Delta D/D_0 = D-1">, which is plotted in panel C.
 
 ### Details
-The time traces are modeled as an exponential decay $$\begin{aligned}x^{\text{EPSP}}(t) &= x^{\text{EPSP}}_{\text{max}} \exp(-(t-t^{\text{EPSP}})/\tau^{\text{EPSP}}),\\
-z^{\text{IPSP}}(t) &= z^{\text{IPSP}}_{\text{max}} \exp(-(t-t^{\text{IPSP}})/\tau^{\text{IPSP}}),\\ z^{\text{BAP}}(t) &= z^{\text{BAP}}_{\text{max}} \exp(-(t-t^{\text{BAP}})/\tau^{\text{BAP}}).\end{aligned}$$ To match the biophysical properties of EPSP, IPSP and BAP, we note that both the maximum value of the time trace (e.g. $x^{\text{EPSP}}_{\text{max}}$), as well as the synaptic weight in the model (e.g. $F$) can be adapted. Here, we chose to set the synaptic weight values to one, i.e. $D=F=1$, and $W = -1 $. The maximum EPSP and IPSP values were then chosen to agree with the experimentally measured values relatively to each other (Supplementary Fig 1 in [1]):
+The time traces are modeled as an exponential decay 
+
+<img src="https://render.githubusercontent.com/render/math?math=\begin{aligned}x^{\text{EPSP}}(t) &= x^{\text{EPSP}}_{\text{max}} \exp(-(t-t^{\text{EPSP}})/\tau^{\text{EPSP}}),\\
+z^{\text{IPSP}}(t) &= z^{\text{IPSP}}_{\text{max}} \exp(-(t-t^{\text{IPSP}})/\tau^{\text{IPSP}}),\\ z^{\text{BAP}}(t) &= z^{\text{BAP}}_{\text{max}} \exp(-(t-t^{\text{BAP}})/\tau^{\text{BAP}}).\end{aligned}"> 
+
+To match the biophysical properties of EPSP, IPSP and BAP, we note that both the maximum value of the time trace (e.g. $x^{\text{EPSP}}_{\text{max}}$), as well as the synaptic weight in the model (e.g. $F$) can be adapted. Here, we chose to set the synaptic weight values to one, i.e. $D=F=1$, and $W = -1 $. The maximum EPSP and IPSP values were then chosen to agree with the experimentally measured values relatively to each other (Supplementary Fig 1 in [1]):
 $$\begin{aligned}
 x^{\text{EPSP}}_{\text{max}} \approx 70 ,\\
 z^{\text{IPSP}}_{\text{max}} \approx 45.
