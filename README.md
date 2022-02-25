@@ -17,8 +17,11 @@ Since the synaptic weight follows the decoding weight on slower timescales, afte
 ### Details
 The time traces are modeled as an exponential decay 
 
-<img src="https://render.githubusercontent.com/render/math?math=$$\begin{aligned}x^{\text{EPSP}}(t) &= x^{\text{EPSP}}_{\text{max}} \exp(-(t-t^{\text{EPSP}})/\tau^{\text{EPSP}}),\\
-z^{\text{IPSP}}(t) &= z^{\text{IPSP}}_{\text{max}} \exp(-(t-t^{\text{IPSP}})/\tau^{\text{IPSP}}),\\ z^{\text{BAP}}(t) &= z^{\text{BAP}}_{\text{max}} \exp(-(t-t^{\text{BAP}})/\tau^{\text{BAP}}).\end{aligned}$$"> 
+<img src="https://render.githubusercontent.com/render/math?math=x^{\text{EPSP}}(t) = x^{\text{EPSP}}_{\text{max}} \exp(-(t-t^{\text{EPSP}})/\tau^{\text{EPSP}}),">
+
+<img src="https://render.githubusercontent.com/render/math?math=z^{\text{IPSP}}(t) = z^{\text{IPSP}}_{\text{max}} \exp(-(t-t^{\text{IPSP}})/\tau^{\text{IPSP}}),"> 
+
+<img src="https://render.githubusercontent.com/render/math?math=z^{\text{BAP}}(t) = z^{\text{BAP}}_{\text{max}} \exp(-(t-t^{\text{BAP}})/\tau^{\text{BAP}}).">
 
 To match the biophysical properties of EPSP, IPSP and BAP, we note that both the maximum value of the time trace (e.g. $x^{\text{EPSP}}_{\text{max}}$), as well as the synaptic weight in the model (e.g. $F$) can be adapted. Here, we chose to set the synaptic weight values to one, i.e. $D=F=1$, and $W = -1 $. The maximum EPSP and IPSP values were then chosen to agree with the experimentally measured values relatively to each other (Supplementary Fig 1 in [1]):
 $$\begin{aligned}
