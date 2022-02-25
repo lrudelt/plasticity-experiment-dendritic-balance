@@ -9,7 +9,7 @@ The model uses the voltage-dependent plasticity rule for input synapses from [3]
 
 Here, the local membrane voltage <img src="https://render.githubusercontent.com/render/math?math=u(t)"> is a linear sum
 
-![formula](https://render.githubusercontent.com/render/math?math=u(t) = F x^{\text{EPSP}}(t) + W z^{\text{IPSP}}(t) - D F z^{\text{BAP}}(t))
+<img alt="formula" src="https://render.githubusercontent.com/render/math?math= F x^{\text{EPSP}}(t) + W z^{\text{IPSP}}(t) - D F z^{\text{BAP}}(t))"/>
 
 of the synaptic input EPSP ($F x^{\text{EPSP}}$), inhibitory input IPSP ($W z^{\text{IPSP}}$) and a backpropagating action potential (BAP) ($DFz^{\text{BAP}}$). To compute the change in decoder weight induced by the plasticity protocol, we integrated the learning rule for $\frac{dD}{dt}$ over 80 seconds with a stimulation rate of 1 Hz (see below for details).
 Since the synaptic weight follows the decoding weight on slower timescales, after hours of plastic changes, the synaptic weight is $F=D$. Due to the choice of initial parameters ($F_0 = D_0 = 1$), the observed relative change in synaptic weight after the experiment will be $\Delta F/F_0 = \Delta D/D_0 = D-1$, which is plotted in panel C.
