@@ -31,10 +31,10 @@ The relative timing of the BAP and EPSPs in the simulation was chosen similar to
 Moreover, to match the experimental results for LTP and LTD protocol, we set the magnitude of the BAP to <img src="https://render.githubusercontent.com/render/math?math=z_{\text{max}}^{\text{BAP}} =1">, and the learning rate <img src="https://render.githubusercontent.com/render/math?math=\eta_D = 3.4\cdot 10^{-5}">. Note that all units for PSPs and voltages are dimensionless, because the resistance of the membrane is not known, and plasticity changes might further be mediated via the calcium concentration, contributing yet another unknown factor.
 
 ### Experimentally measured induced spine volume changes
-The experimentally measured changes in spine volume $V_H$ from [1] are
-LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 63 \pm 21 %">
-LTD: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 2.9 \pm 3.7 %">
-LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx - 38.0 \pm 5.2 %">
+The experimentally measured changes in spine volume <img src="https://render.githubusercontent.com/render/math?math=V_H"> from [1] are
+LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 63 \pm 21 \%">
+LTD: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx 2.9 \pm 3.7 \%">
+LTP: <img src="https://render.githubusercontent.com/render/math?math=\Delta V_H \approx - 38.0 \pm 5.2 \%">
 
 [1] T. Hayama et al., “GABA promotes the competitive selection of dendritic spines by controlling local Ca2+ signaling,” Nat Neurosci, vol. 16, no. 10, pp. 1409–1416, Oct. 2013, doi: 10.1038/nn.3496.
 
