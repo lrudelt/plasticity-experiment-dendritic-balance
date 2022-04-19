@@ -1,6 +1,6 @@
 # plasticity-experiment-dendritic-balance
 This repository contains code for Python 3 to reproduce the experiment in Hayama et al. 2013 [1] using the model of voltage-dependent plasticity with dendritic balance from Mikulasch et al. 2021 [3]. Figure from [2].
-![](https://pad.gwdg.de/uploads/c4ea241992182d482dec04a57.png)
+![](plasticity.png)
 
 ### Model
 The model uses the voltage-dependent plasticity rule for input synapses from [3], which implements gradient ascent on the prediction error. The prediction error is encoded by the membrane voltage <img src="https://render.githubusercontent.com/render/math?math=u(t)"> close to the dendritic spine of the synapse. During plasticity, the synaptic weight <img src="https://render.githubusercontent.com/render/math?math=F"> slowly follows the decoding weight <img src="https://render.githubusercontent.com/render/math?math=D">, which on faster timescales is adapted according to
